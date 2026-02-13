@@ -55,7 +55,7 @@ header h1{
    
 }
 
-nav {
+nav.nav-desktop {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@ nav {
     gap: 3rem;
 }
 
-nav a {
+nav.nav-desktop a {
     font-size: 1rem;
     letter-spacing: 0.1rem;
     transition: color 0.2s ease;
@@ -72,9 +72,11 @@ nav a {
 
 }
 
-nav a:hover {
+nav.nav-desktop a:hover {
     color: grey;
 }
+
+
 
 .btn-signin {
     padding: 0.5rem 2.5rem;
@@ -92,3 +94,117 @@ nav a:hover {
     background-color: white;
     transition: background-color 0.5s ease;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(90vh - 6rem);
+}
+
+.content{
+    max-width: 40rem;
+    margin-left: 10%;
+   z-index: 999;
+}
+
+.tag-box{
+    position: relative;
+    width: 18rem;
+    height: 2rem;
+    border-radius: 50px;
+    background: linear-gradient(to right, #ECF0F1,#BDC3C7,#7741aa,#ECF0F1,#BDC3C7);
+    background-size: 200%;
+    animation: animationGradient 4s linear infinite reverse;
+}
+
+@keyframes animationGradient{
+    to{
+        background-position: 200%;
+    }
+}
+
+.tag{
+    position: absolute;
+    inset: 3px 3px 3px 3px;
+    background-color: black;
+    color: white;
+    border-radius: 14055px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.tag:hover{
+    background-color: #616161;
+    transition: background-color 0.5s ease;
+}
+
+.content h1{
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin: 2rem 0;
+    line-height: 1.2;
+    text-shadow: 0 0 4px #BDC3C7;
+
+}
+
+.description{
+    font-size: 1.2rem;
+    color: #a7a7a7;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05rem;
+    max-width: 35rem;
+}
+
+.button{
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.btn-get-started {
+    padding: 0.7rem 1.2rem;
+    color: #FFFFFF;
+    border-radius: 50px;
+    border: 1px solid #7741aa;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-get-started:hover {
+    background-color: #5d5d5d;
+    transition: background-color 0.5s ease;
+}
+
+.btn-getstarted {
+    padding: 0.7rem 1.2rem;
+    color: #FFFFFF;
+    border-radius: 50px;
+    border: 1px solid #7741aa;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-getstarted:hover {
+    background-color: #5d5d5d;
+    transition: background-color 0.5s ease;
+}
+
+.robot-3d{
+    position: absolute;
+    top: 4rem;
+    right: -30%;
+}
+
+
+
